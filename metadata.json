@@ -1,0 +1,6 @@
+{
+  "name": "Manajemen Keuangan",
+  "description": "Aplikasi manajemen keuangan pribadi dengan fitur pencatatan transaksi, laporan, master data, dan ekspor ke PDF/Excel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

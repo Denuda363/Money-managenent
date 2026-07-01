@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "path": "/users/{userId}/transactions/{transactionId}",
+      "methods": [
+        {
+          "method": "read",
+          "condition": "request.auth != null && request.auth.uid == userId"
+        },
+        {
+          "method": "write",
+          "condition": "request.auth != null && request.auth.uid == userId"
+        }
+      ]
+    },
+    {
+      "path": "/users/{userId}/categories/{categoryId}",
+      "methods": [
+        {
+          "method": "read",
+          "condition": "request.auth != null && request.auth.uid == userId"
+        },
+        {
+          "method": "write",
+          "condition": "request.auth != null && request.auth.uid == userId"
+        }
+      ]
+    },
+    {
+      "path": "/users/{userId}/profile/{docId}",
+      "methods": [
+        {
+          "method": "read",
+          "condition": "request.auth != null && request.auth.uid == userId"
+        },
+        {
+          "method": "write",
+          "condition": "request.auth != null && request.auth.uid == userId"
+        }
+      ]
+    }
+  ]
+}
